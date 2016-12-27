@@ -36,7 +36,9 @@ If you indeed used the path option in the installer - Just type `gem install svn
 
 - SVN 
 -- **Client**
-If you do not already have svn client , than install one of your choice [  The most basic ` Tortoise SVN` for win]
+If you are reading this , than I assume you already have an SVN client, and even assume you already have tortoise . 
+
+But it case I am wrong , and If you do not already have svn client , than install one of your choice [  The most basic ` Tortoise SVN` for win] https://sourceforge.net/projects/tortoisesvn/?source=typ_redirect
 -- **Server**
 you will need to install some kind of server to serve the SVN files .
 I have used the simple `svnserve.exe` found inside the Tortoise install dir ( at `./bin`)
@@ -110,3 +112,5 @@ http://jameskovacs.com/2007/06/12/installing-subversion-as-a-windows-service/
 https://github.com/nirvdrum/svn2git/issues/90
 
 https://www.getdonedone.com/converting-5-year-old-repository-subversion-git/
+
+https://sourceforge.net/projects/tortoisesvn/
