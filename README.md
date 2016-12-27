@@ -1,5 +1,12 @@
 # local-tortois-svn2git-
-A simple guide to migrate LOCAL svn repos made with tortoise to GIT 
+A simple guide to migrate LOCAL svn repos made with tortoise to GIT .
+
+## WHY ?? 
+
+Because after spending hours on the net, trying to find answers, I couldn't find even one guide to help with **LOCAL** simple repos made with tortoise .
+I also know that a lot of the less-advanced developers prefare GUI tools, and might not be comfortable with too much CLI ( although in this case - seems unavoidable ) . 
+
+
 # Importing local ( tortoise ) repos to local GIT 
 ## TL;DR; ##
 `D:\mig>svn2git svn://127.0.0.1/repo --username magic-MIDI --authors authors.txt
