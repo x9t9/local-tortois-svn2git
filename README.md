@@ -43,6 +43,7 @@ In order to change it ( if you got it wrong for some reason ) - or delete the se
 
 Now, if the command was ok, you still need to start the server , so either reboot machine, or go to the services [`My compuer-> Manage -> Services and Applications -> Services`] and again, search for service name ( 'Subversion Server' ) and start the service .
 
+Another option is to downlaod `visualSVN server ` https://www.visualsvn.com/visualsvn/download/ and temporary install it . This option might be easier for it's visual GUI and easy config options.
 - GIT 
 Install any git of choice ,but make sure you have access to the command line tools with global path [ `CMDER`]
 I had `sourcetree` installed on my machine, and also CMDR ( full version) that comes with GIT global.
@@ -94,7 +95,6 @@ You should see all your history, files , authors etc,.
 
 ### resources :
 https://subversion.open.collab.net/articles/svnserve-service.htm
-
-
-
-
+http://jameskovacs.com/2007/06/12/installing-subversion-as-a-windows-service/
+https://github.com/nirvdrum/svn2git/issues/90
+https://www.getdonedone.com/converting-5-year-old-repository-subversion-git/
