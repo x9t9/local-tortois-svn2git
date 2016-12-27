@@ -35,16 +35,23 @@ Install using the `path` option in the installer ( **NOT** checked by default )
 If you indeed used the path option in the installer - Just type `gem install svn2git` on CLI [ `CMDER` ]
 
 - SVN 
+
 -- **Client**
+
 If you are reading this , than I assume you already have an SVN client, and even assume you already have tortoise . 
 
 But it case I am wrong , and If you do not already have svn client , than install one of your choice [  The most basic ` Tortoise SVN` for win] https://sourceforge.net/projects/tortoisesvn/?source=typ_redirect
+
 -- **Server**
+
 you will need to install some kind of server to serve the SVN files .
+
 I have used the simple `svnserve.exe` found inside the Tortoise install dir ( at `./bin`)
+
 In order to install it as a service you will need to do :
 `sc create svnserve binpath= "\"C:\Program Files\TortoiseSVN\bin\" --service -r D:\Repos" displayname= "Subversion Server" depend= Tcpip start= auto `
 source : https://subversion.open.collab.net/articles/svnserve-service.htm
+
 In reality, this command for me resulted in an error `~ access denied ` - and that was because of the path not being complete . the correct path should include the svnserve.exe part , to become like this :
 `sc create svnserve binpath= "\"C:\Program Files\TortoiseSVN\bin\svnserve.exe" --service -r D:\Repos" displayname= "Subversion Server" depend= Tcpip start= auto `
 
