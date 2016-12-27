@@ -77,6 +77,7 @@ In your CLI of choice, type :
 
 `D:\mig>svn2git svn://127.0.0.1/repo --username svnUserName --authors authors.txt
 --notags --nobranches --notrunk`
+
 **Note**  : This is the final version that worked **FOR ME** . [  `--notags` , `--nobranches` ,  `--notrunk`]
 
 As many threads on the net will reveal - it might not work well for your configuration of repositories.
@@ -84,7 +85,8 @@ It might has worked for me because I had no tags and branches ( had just empty f
 
 You could try some options in any combination , like : `--notags` , `--nobranches` ,  `--notrunk` and also `--rootistrunk`
 @see https://github.com/nirvdrum/svn2git/issues/90 for some other problems and solutions other people encountered . 
-BTW - this is why this repo is called ***Importing local ( tortoise ) repos to local GIT*** - It will work on LOCAL repositories , made with STANDARD Tortoise file structure without branches or tags . Maybe I should have called it  **Importing local ( *simple standard* tortoise ) repos to local GIT**..
+
+*BTW* - this is why this repo is called ***Importing local ( tortoise ) repos to local GIT*** - It will work on LOCAL repositories , made with STANDARD Tortoise file structure without branches or tags . Maybe I should have called it  **Importing local ( *simple standard* tortoise ) repos to local GIT**..
 
 
 Any time you will get an error , you might see a newly created `.git` file in your`D://mig` folder ( or whatever your empty migration folder is ) .
@@ -102,6 +104,9 @@ You should see all your history, files , authors etc,.
 
 ### resources :
 https://subversion.open.collab.net/articles/svnserve-service.htm
+
 http://jameskovacs.com/2007/06/12/installing-subversion-as-a-windows-service/
+
 https://github.com/nirvdrum/svn2git/issues/90
+
 https://www.getdonedone.com/converting-5-year-old-repository-subversion-git/
