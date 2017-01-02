@@ -86,9 +86,12 @@ Create a file named authors.txt , with your authors map inside .
 If you do not know the users , - you will need to use svn log ( see here : https://www.getdonedone.com/converting-5-year-old-repository-subversion-git/ ) 
 where `svnUserName` is the SVN username and `gitUser` is your git user name
 
--- NOTE On CMDR . 
+-- NOTE On CMDER . 
+
 There seems to be an issue with CYGWIN that might affect CMDR on some configuration ( 1 out of 3 machines for me ) .
+
 So if it is not working for you - launch the command from another shell / cli ( CMD will do if GIT is installed with PATH )
+
 @see //http://stackoverflow.com/questions/26620312/installing-git-in-path-with-github-client-for-windows
 
 ### Migration Execution
