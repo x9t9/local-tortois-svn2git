@@ -4,15 +4,19 @@ A simple guide to migrate LOCAL svn repos made with tortoise to GIT .
 ## WHY ?? 
 
 Because after spending hours on the net, trying to find answers, I couldn't find even one guide to help with **LOCAL** simple repos made with tortoise .
-I also know that a lot of the less-advanced developers prefare GUI tools, and might not be comfortable with too much CLI ( although in this case - seems unavoidable ) . 
+I also know that a lot of the less-advanced developers prefer GUI tools, and might not be comfortable with too much CLI ( although in this case - seems unavoidable ) . 
 
+There is also a PHP script to try and automate the process.
+It was made for my own convinience and might not be suitable for all situation - but can be easily modified .
+Refer to the README.md on the php folder for more info .
 
-# Importing local ( tortoise ) repos to local GIT 
+# Importing local ( tortoise ) repos to local GIT
 ## TL;DR; ##
-`D:\mig>svn2git svn://127.0.0.1/repo --username magic-MIDI --authors authors.txt
+`D:\mig-folder>svn2git svn://127.0.0.1/repo --username magic-MIDI --authors authors.txt
 --notags --nobranches --notrunk`
 
-Don't forget `authors.txt` ..
+Don't forget `authors.txt` . ( `svnUserName = gitUserName <gitUserMail@domain.tld>` - one line per user .)  
+
 ## TOOLS 
 - **RUBY** ( win installer http://rubyinstaller.org/ ) 
 - **SVN** ( I used tortouis )
@@ -20,6 +24,11 @@ Don't forget `authors.txt` ..
 - **svn2git** as Ruby Gem https://rubygems.org/
 - **GIT** command line toold 
 - **.git** client
+- **CLI** - any favorite will do
+
+If you want to use the PHP script - 
+
+- **XAMP** ( or mamp, or any other php server )
 
 ## Steps 
 
@@ -76,6 +85,11 @@ Create a file named authors.txt , with your authors map inside .
 `svnUserName = gitUser < your_git_account_mail@mail.com >`  - one line for each user.
 If you do not know the users , - you will need to use svn log ( see here : https://www.getdonedone.com/converting-5-year-old-repository-subversion-git/ ) 
 where `svnUserName` is the SVN username and `gitUser` is your git user name
+
+-- NOTE On CMDR . 
+There seems to be an issue with CYGWIN that might affect CMDR on some configuration ( 1 out of 3 machines for me ) .
+So if it is not working for you - launch the command from another shell / cli ( CMD will do if GIT is installed with PATH )
+@see //http://stackoverflow.com/questions/26620312/installing-git-in-path-with-github-client-for-windows
 
 ### Migration Execution
 Now the buggy part began ( for me )
