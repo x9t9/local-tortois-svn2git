@@ -1,6 +1,8 @@
 # local-tortois-svn2git - PHP script
 A simple, primitive script to automate the migratiom of old SVN repos to GIT .
 
+Got the root of this repo to learn more . https://github.com/x9t9/local-tortois-svn2git-
+
 ## WHY ?? 
 
 Because manually doing this operation for 300 old svn repos seems a bit time consuming .
